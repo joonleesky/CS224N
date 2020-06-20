@@ -1,0 +1,28 @@
+2018-08-26 10:14:22,377:INFO: Building model...
+2018-08-26 10:14:28,393:INFO: took 6.01 seconds
+2018-08-26 10:14:29,110:INFO: Epoch 1 out of 10
+2018-08-26 10:14:30,494:INFO: Evaluating on development data
+2018-08-26 10:14:30,922:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2735.00 	83.00   	98.00   	8.00    	225.00  
+ORG     	538.00  	818.00  	333.00  	52.00   	351.00  
+LOC     	197.00  	155.00  	1439.00 	56.00   	247.00  
+MISC    	236.00  	259.00  	185.00  	332.00  	256.00  
+O       	141.00  	105.00  	49.00   	7.00    	42457.00
+
+2018-08-26 10:14:30,923:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.97 	0.71 	0.87 	0.78 
+ORG  	0.96 	0.58 	0.39 	0.47 
+LOC  	0.97 	0.68 	0.69 	0.69 
+MISC 	0.98 	0.73 	0.26 	0.39 
+O    	0.97 	0.98 	0.99 	0.98 
+micro	0.97 	0.93 	0.93 	0.93 
+macro	0.97 	0.74 	0.64 	0.66 
+not-O	0.97 	0.68 	0.62 	0.65 
+
+2018-08-26 10:14:30,925:INFO: Entity level P/R/F1: 0.58/0.58/0.58
+2018-08-26 10:14:30,925:INFO: New best score! Saving model in results/window/20180826_101420/model.weights
+2018-08-26 10:14:30,977:INFO: Epoch 2 out of 10
+2018-08-26 10:14:42,253:INFO: Testing make_windowed_data
+2018-08-26 10:14:42,256:INFO: Passed!
